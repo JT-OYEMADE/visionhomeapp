@@ -1,0 +1,968 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Maison Neue", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Clash Display", sans-serif;
+}
+
+p {
+  font-family: "Maison Neue", sans-serif;
+}
+
+/* UTILITIES CLASSES */
+.mx-logo {
+  margin: 0 8rem 0 7.5rem;
+}
+
+.mx-6 {
+  margin: 0 6rem;
+}
+
+.mx-8 {
+  margin: 0 8rem;
+}
+
+.mx-10 {
+  margin: 0 10rem;
+}
+
+.my-8 {
+  margin: 8rem 0;
+}
+
+.px-8 {
+  padding: 0 8rem;
+}
+
+.ms-6 {
+  margin-left: 6rem;
+}
+
+.ms-8 {
+  margin-left: 8rem;
+}
+.mx-15 {
+  margin: 0 15rem;
+}
+.me-10 {
+  margin-right: 10rem;
+}
+
+.ps-md-6 {
+  padding-left: 6rem;
+}
+
+.pe-md-6 {
+  padding-right: 6rem;
+}
+
+.px-md-6 {
+  padding: 0 6rem;
+}
+.ps-lg-6 {
+  padding-left: 6rem;
+}
+
+.pe-lg-6 {
+  padding-right: 6rem;
+}
+
+.px-lg-6 {
+  padding: 0 6rem;
+}
+
+.text-blue {
+  color: #171dde;
+}
+
+.btn-red {
+  background-color: #ff0000;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.btn-red:hover {
+  opacity: 0.8 !important;
+}
+
+.btnn {
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+/* .btn-red:hover {
+  background-color: rgb(250, 0, 0) !important;
+  color: #ffffff;
+  font-weight: 300;
+} */
+
+/* Navbar */
+.visionapp {
+  font-family: "Lato", sans-serif;
+  color: #000000;
+  background: #ffffff;
+  font-weight: 900;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  word-spacing: none;
+}
+
+/* Showcase */
+#showcase .w-img {
+  width: 1200px;
+  height: 750px;
+}
+
+#showcase h1 {
+  font-weight: 600;
+}
+
+#solutions {
+  background: url("../img/solutions.png") no-repeat center center/cover;
+  height: 75vh;
+  position: relative;
+  color: #ffffff;
+}
+
+#solutions h1 {
+  font-weight: 600;
+}
+
+#solutions::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #171dde;
+  opacity: 0.85;
+}
+
+#solutions .hero {
+  z-index: 10;
+  position: absolute;
+}
+
+#solutions .hero h1 {
+  font-size: 48px;
+}
+
+#solutions .hero p {
+  font-size: 24px;
+}
+
+#services h1 {
+  font-weight: 600;
+}
+
+#services h4 {
+  font-size: 40px;
+}
+
+#services p {
+  font-size: 17px;
+}
+
+#services .carousel .carousel-indicators button img {
+  
+  color: #171dde !important;
+  
+}
+
+#services .carousel .carousel-indicators button img:active {
+  color: #171dde;
+  background-color: #171dde !important;
+}
+
+#services .carousel-indicators{
+  left: 1110px;
+}
+
+/* #services .meal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem;
+} */
+
+#services .meal-text {
+  padding-left: 50px;
+  padding-right: 15px;
+}
+
+#services .meal-text .meal-heading {
+  margin-top: 150px;
+}
+
+#services .meal-text .meal-pg {
+  font-size: 20px;
+}
+
+#services .meal-pic {
+  padding: 0;
+  margin: 0;
+}
+
+#about {
+  margin-top: 3rem;
+}
+
+#about .about-heading {
+  font-size: 48px;
+}
+
+#about .about-p {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+#achievement {
+  background: url("../img/acheivement.png") no-repeat center center/cover;
+  height: 60vh;
+  position: relative;
+  color: #ffffff;
+}
+
+#achievement::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #171dde;
+  opacity: 0.85;
+}
+
+#achievement .container {
+  z-index: 10;
+  position: absolute;
+  margin-top: 150px;
+  padding-left: 120px;
+}
+
+#achievement .container h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 78.72px;
+}
+
+#achievement .container button {
+  margin-top: 20px;
+  margin-left: 525px;
+}
+
+#people {
+  background: #ffffff;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+#people h3 {
+  font-size: 40px;
+}
+
+#people p {
+  font-size: 20px;
+}
+
+#people h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#people .row p {
+  font-size: 15px;
+}
+
+#people .card-body {
+  padding: 14px 18px;
+}
+
+#people img {
+  margin-top: 5px;
+}
+
+#people .people-text {
+  padding-left: 12px;
+  padding-right: 15px;
+}
+
+footer .container a {
+  font-size: 13px;
+}
+
+footer .container p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+footer .container .bold {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+/* Mobile  */
+/* @media (max-width: 275px) {
+  #showcase {
+    background: url("../img/Doctor putting on surgical gloves with copy space.png")
+      no-repeat center center/cover;
+    height: 100vh;
+  } 
+}*/
+
+@media (min-width: 280px) and (max-width: 379px) {
+  .navbar {
+    padding: 3px !important;
+  }
+
+  .navbar-toggler {
+    padding: 3px 10px !important;
+    border: none;
+  }
+
+  .logo {
+    padding-left: 27px;
+  }
+
+  #showcase {
+    background: url("../img/Doctor putting on surgical gloves with copy space.png")
+      no-repeat right center/cover;
+    height: 80vh;
+    background-size: 214px 555px;
+    padding-left: 32px !important;
+  }
+
+  #showcase .show h1 {
+    font-size: 20px;
+    text-align: start;
+    width: 80%;
+    margin-top: 150px;
+  }
+
+  #showcase .show p {
+    font-size: 12px;
+    text-align: start;
+  }
+
+  #showcase .d-sm-flex {
+    padding-bottom: 2rem;
+  }
+
+  #showcase .show {
+    padding-top: 0px !important;
+  }
+
+  #showcase .show button {
+    float: left;
+    font-size: 8px;
+  }
+
+  #showcase .show button img {
+    width: 20px;
+  }
+
+  #showcase .w-img {
+    display: none;
+  }
+
+  #solutions {
+    /* background: url("../img/solutions.png") no-repeat center center;
+    height: 40vh;
+    position: relative;
+    color: #ffffff; */
+    background-image: url("../img/solutions.png");
+    background-size: 750px 350px;
+    background-position: center;
+    height: 50vh;
+  }
+
+  #solutions .hero h1 {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    font-size: 24px;
+    text-align: start;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #solutions .hero p {
+    font-size: 12px !important;
+    text-align: start;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  #services {
+  }
+
+  #services p {
+    font-size: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  #services {
+    display: none;
+  }
+
+  #about {
+    padding: 20px 30px;
+  }
+
+  #about .about-heading {
+    font-size: 20px;
+  }
+
+  #about .about-p {
+    font-size: 12px;
+  }
+
+  #achievement {
+    display: none;
+  }
+
+  #people h3 {
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  #people .container .people-pg {
+    font-size: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #people .row {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  #people .row p {
+    font-size: 7px;
+  }
+
+  footer .line {
+    margin-left: 32px !important;
+    margin-right: 32px !important;
+  }
+
+
+  footer .footer-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  footer .s-media {
+    margin-top: 40px;
+    justify-content: space-between !important;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* Xr Pro */
+@media (min-width: 380px) and (max-width: 540px) {
+  .logo {
+    padding-left: 29px;
+  }
+
+  #showcase {
+    background: url("../img/Doctor putting on surgical gloves with copy space.png")
+      no-repeat right center/cover;
+    height: 60vh;
+    background-size: 214px 555px;
+    padding-left: 32px !important;
+  }
+
+  #showcase .show h1 {
+    font-size: 20px;
+    text-align: start;
+    width: 80%;
+  }
+
+  #showcase .show p {
+    font-size: 12px;
+    text-align: start;
+  }
+
+  #showcase .show button {
+    float: left;
+    font-size: 8px;
+  }
+
+  #showcase .show button img {
+    width: 20px;
+  }
+
+  #showcase::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 0.1;
+  }
+
+  #showcase .show {
+    margin-top: 10rem;
+  }
+
+  #showcase .w-img {
+    display: none;
+  }
+
+  #solutions {
+    /* background: url("../img/solutions.png") no-repeat center center;
+    height: 40vh;
+    position: relative;
+    color: #ffffff; */
+    background-image: url("../img/solutions.png");
+    background-size: 750px 350px;
+    background-position: center;
+    height: 35vh;
+  }
+
+  #solutions .hero {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  #solutions .hero h1 {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    font-size: 24px;
+    text-align: start;
+  }
+
+  #solutions .hero p {
+    font-size: 10px;
+    text-align: start;
+  }
+
+  #services {
+    padding: 0;
+    margin: 0;
+  }
+
+  #services p {
+    font-size: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  #services .meal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  #services .meal-heading {
+    font-size: 12px;
+    
+  }
+
+  #services .meal-pg {
+    font-size: 8px;
+
+  }
+
+  #services .meal-pic {
+    width: 50px;
+    height: 80px;
+  }
+
+  #services {
+    display: none;
+  }
+
+  
+
+  #about {
+    padding: 20px 30px;
+  }
+
+  #about .about-heading {
+    font-size: 20px;
+  }
+
+  #about .about-p {
+    font-size: 12px;
+  }
+
+  #achievement {
+    height: 40vh;
+    background-image: url("../img/solutions.png");
+    background-size: 600px 400px;
+    background-position: center;
+  }
+
+  #achievement .container {
+    z-index: 10;
+    position: absolute;
+    margin-top: 70px;
+    padding-left: 20px;
+  }
+
+  #achievement .container h1 {
+    font-size: 25px;
+  }
+
+  #achievement .container button {
+    margin-left: 143px !important;
+    margin-top: 5px;
+  }
+
+  #achievement .container .ach {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+
+  #achievement .container .ach .pe-lg-6 {
+    padding-right: 10px;
+  }
+
+  #achievement .container .ach .px-lg-6 {
+    padding: 0 15px;
+  }
+
+  #achievement .container .ach .ps-lg-6 {
+    padding-left: 10px;
+  }
+
+  #achievement button {
+    font-size: 8px;
+
+  }
+
+  #achievement button img {
+    width: 20px;
+  }
+
+  #people h3 {
+    font-size: 20px;
+  }
+  
+  #people .people-pg {
+    font-size: 14px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  #people .row {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  #people .row p {
+    font-size: 7px;
+  }
+
+  footer .line {
+    margin-left: 32px !important;
+    margin-right: 32px !important;
+  }
+
+
+  footer .footer-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  footer .s-media {
+    margin-top: 40px;
+    justify-content: space-between !important;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 542px) and (max-width: 600px) {
+
+  #showcase img {
+    display: none;
+  }
+
+  #showcase {
+
+    background: url("../img/Doctor putting on surgical gloves with copy space.png")
+      no-repeat right center/cover;
+    height: 60vh;
+    background-size: 214px 555px;
+    padding-left: 32px !important;
+  }
+
+  #showcase .show h1 {
+    font-size: 20px;
+    text-align: start;
+    width: 60% !important;
+  }
+
+  #showcase .show p {
+    font-size: 8px !important;
+    text-align: start;
+    width: 50%;
+  }
+
+  #showcase .show button {
+    float: left;
+    font-size: 8px;
+  }
+
+  #showcase .show button img {
+    width: 20px;
+  }
+
+  #showcase::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 0.1;
+  }
+
+  #showcase .show {
+    margin-top: 10rem;
+  }
+
+  #solutions {
+    /* background: url("../img/solutions.png") no-repeat center center;
+    height: 40vh;
+    position: relative;
+    color: #ffffff; */
+    background-image: url("../img/solutions.png");
+    background-size: 550px 350px;
+    background-position: center;
+    height: 35vh;
+  }
+
+  #solutions h1 {
+    font-size: 25px !important;
+  }
+
+  #solutions .hero p {
+    font-size: 15px !important;
+    padding-right: 38px !important;
+    
+  }
+
+
+  #achievement {
+    height: 40vh !important;
+    background-image: url("../img/solutions.png") !important;
+    background-size: 600px 400px !important;
+    background-position: center !important;
+  }
+  
+  #achievement .container {
+    z-index: 10;
+    position: absolute;
+    margin-top: 70px;
+    padding-left: 20px;
+  }
+  
+  #achievement .container h1 {
+    font-size: 25px;
+  }
+  
+  #achievement .container button {
+    
+    margin-left: 0 !important;
+    margin-top: 5px;
+    margin-right: 0;
+  }
+  
+  #achievement .container .ach {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #achievement .container .ach .pe-lg-6 {
+    padding-right: 10px;
+  }
+  
+  #achievement .container .ach .px-lg-6 {
+    padding: 0 15px;
+  }
+  
+  #achievement .container .ach .ps-lg-6 {
+    padding-left: 10px;
+  }
+  
+  #achievement button {
+    font-size: 12px;
+    margin-left: 0 !important;
+  
+  }
+  
+  #achievement button img {
+    width: 20px;
+  }
+
+  #people {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  footer .line {
+    margin-left: 32px !important;
+    margin-right: 32px !important;
+  }
+
+
+  footer .footer-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  footer .s-media {
+    margin-top: 40px;
+    justify-content: space-between !important;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 915px) {
+  .logo {
+    padding-left: 20px !important;
+  }
+
+  #showcase {
+    padding-left: 32px;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  #showcase .show h1 {
+    font-size: 25px;
+    text-align: start;
+    width: 80%;
+    padding-left: 32px;
+  }
+
+  #showcase .show p {
+    font-size: 15px;
+    text-align: start;
+    padding-left: 32px;
+  }
+
+  #showcase .show button {
+    margin-left: 32px;
+  }
+
+  #showcase .w-img {
+    width: 300px !important;
+    height: 750px;
+  }
+
+  #solutions {
+    background: url("../img/solutions.png") no-repeat center center;
+    height: 50vh;
+    position: relative;
+    color: #ffffff;
+  }
+
+  #solutions .hero {
+    padding: 32px;
+    margin-left: 32px !important;
+    margin-top: 20px;
+  }
+
+  #services p {
+    font-size: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  #services {
+    display: none;
+  }
+
+  #about {
+    padding: 20px 30px;
+  }
+
+  #about .about-heading {
+    font-size: 28px;
+  }
+
+  #about .about-p {
+    font-size: 18px;
+  }
+
+  /* #about .a .b p{
+    padding-bottom: 23px;
+  } */
+
+  #achievement {
+    height: 50vh;
+    background-image: url("../img/solutions.png");
+    background-size: 900px 600px;
+    background-position: center;
+    
+  }
+
+  #achievement button {
+    font-size: 12px;
+  }
+
+  #achievement button img {
+    width: 40px;
+  }
+
+  #achievement .container button {
+    margin-left: 235px !important;
+    margin-top: 30px;
+  }
+}
+
+
+
+

@@ -22,11 +22,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Maison Neue", sans-serif;
+  font-family: "Maison Neue", sans-serif !important;
 }
 
 p {
-  font-family: "Maison Neue", sans-serif;
+  font-family: "Maison Neue", sans-serif !important;
 }
 
 /* UTILITIES CLASSES */
@@ -115,7 +115,6 @@ p {
   font-size: 16px;
 }
 
-
 /* .btn-red:hover {
   background-color: rgb(250, 0, 0) !important;
   color: #ffffff;
@@ -124,7 +123,7 @@ p {
 
 /* Navbar */
 .visionapp {
-  font-family: "Lato", sans-serif;
+  font-family: "Maison Neue", sans-serif;
   color: #000000;
   background: #ffffff;
   font-weight: 900;
@@ -155,7 +154,7 @@ p {
 }
 
 #solutions h1 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #solutions::after {
@@ -196,18 +195,16 @@ p {
   margin: auto;
 }
 
-#services .carousel .carousel-indicators button img {
-  
+/* #services .carousel .carousel-indicators button img {
   color: #171dde !important;
-  
-}
+} */
 
 #services .carousel .carousel-indicators button img:active {
   color: #171dde;
   background-color: #171dde !important;
 }
 
-#services .carousel-indicators{
+#services .carousel-indicators {
   left: 1110px;
 }
 
@@ -335,7 +332,6 @@ footer .container .bold {
   font-weight: 700;
 }
 
-
 /* Mobile  */
 /* @media (max-width: 275px) {
   #showcase {
@@ -345,7 +341,7 @@ footer .container .bold {
   } 
 }*/
 
-@media (min-width: 280px) and (max-width: 379px) {
+@media (min-width: 280px) and (max-width: 380px) {
   .navbar {
     padding: 3px !important;
   }
@@ -363,7 +359,7 @@ footer .container .bold {
     background: url("../img/Doctor putting on surgical gloves with copy space.png")
       no-repeat right center/cover;
     height: 80vh;
-    background-size: 214px 555px;
+    background-size: 214px 600px;
     padding-left: 32px !important;
   }
 
@@ -404,7 +400,7 @@ footer .container .bold {
     /* background: url("../img/solutions.png") no-repeat center center;
     height: 40vh;
     position: relative;
-    color: #ffffff; */
+    color: #ffffff;*/
     background-image: url("../img/solutions.png");
     background-size: 750px 350px;
     background-position: center;
@@ -429,6 +425,7 @@ footer .container .bold {
   }
 
   #services {
+    display: none;
   }
 
   #services p {
@@ -438,11 +435,79 @@ footer .container .bold {
   }
 
   #services {
+    display: block;
+  }
+
+  #services h1 {
+    font-size: 30px;
+  }
+
+  #services .p-main {
+    font-size: 15px !important;
+    width: 80%;
+
+  }
+
+  #services .carousel-inner {
+    margin-top: 30px ;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  #services .meal-text {
+    /* padding-left: 50px !important;
+    padding-right: 50px !important; */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  #services .meal-text .meal-heading {
+    display: block;
+    margin-top: 30px !important;
+    text-align: center;
+    text-justify: auto;
+    padding: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  #services .meal-text .meal-pg {
+    font-size: 20px;
+    /* width: 400px; */
+    text-align: center;
+    text-justify: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #services .carousel-inner .row .meal-pic img {
+    width: 300px;
+    height: 300px;
+    margin-left: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #services .carousel-control-next {
+    padding-right: 30px;
+    display: none;
+  }
+
+  #services .carousel-control-prev {
+    padding-left: 30px ;
+    display: none;
+  }
+
+  #services .carousel-indicators {
+    left: 620px !important;
     display: none;
   }
 
   #about {
-    padding: 20px 30px;
+    padding: 20px 15px;
   }
 
   #about .about-heading {
@@ -451,18 +516,67 @@ footer .container .bold {
 
   #about .about-p {
     font-size: 12px;
+    margin-bottom: 2px !important;
+  }
+
+  #about .row {
+    padding-bottom: 2px !important;
   }
 
   #achievement {
+    height: 48vh !important;
+    background-size: 450px 350px !important;
+  }
+
+  /* #achievement::before {
+    background: #171dde !important;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+  }
+
+  #achievement .container {
+    z-index: 10;
+    position: absolute;
+    margin-top: 90px;
+    /* padding-left: 20px;
+    padding-right: 20px;
+    max-width: 350px;*/
+    /* display: none;
+  }
+
+  #achievement .container h1 {
+    font-size: 25px;
     display: none;
   }
+
+  #achievement .container div h2 {
+    font-size: 15px;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: none;
+  }
+
+  #achievement .container div div p {
+    font-size: 10px;
+    display: none;
+  }
+
+  #achievement button {
+    margin-left: 140px !important;
+    display: none;
+  } */
 
   #people h3 {
     font-size: 20px;
     padding-left: 30px;
     padding-right: 30px;
   }
-  
+
   #people .container .people-pg {
     font-size: 12px;
     padding-left: 30px;
@@ -478,17 +592,29 @@ footer .container .bold {
     font-size: 7px;
   }
 
+  #people .row h5 {
+    font-size: 12px;
+  }
+
+  #people .row .people-img {
+    width: 30px;
+  }
+
   footer .line {
     margin-left: 32px !important;
     margin-right: 32px !important;
   }
-
 
   footer .footer-group {
     display: flex;
     flex-direction: column;
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  footer .footer-group .list-group-item {
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
 
   footer .s-media {
@@ -499,17 +625,148 @@ footer .container .bold {
   }
 }
 
+@media (min-width: 360px) and (max-width: 414px) {
+  #showcase {
+    height: 64vh !important;
+    background-size: 214px 475px !important;
+  }
+
+  #showcase .show h1 {
+    margin-top: 100px;
+  }
+
+  #solutions {
+    background-size: 450px 350px !important;
+    background-position: center;
+    height: 55vh !important;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #achievement {
+    height: 50vh !important;
+    background-image: url("../img/solutions.png");
+    background-size: 600px 400px;
+    background-position: center;
+  }
+  
+
+  #achievement::before {
+    background: #171dde !important;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+  }
+
+  #achievement .container {
+    z-index: 10;
+    position: absolute;
+    margin-top: 70px;
+    padding-left: 20px;
+  }
+
+  #achievement .container h1 {
+    font-size: 25px;
+    display: block;
+  }
+
+  #achievement .container .ach {
+    margin-bottom: 10px !important;
+
+  }
+
+  #achievement .container .ach h2 {
+    font-size: 18px;
+  }
+
+  #achievement .container .ach p {
+    font-size: 12px;
+  }
+
+  #achievement .container .ach .pe-lg-6 {
+    padding-right: 10px;
+  }
+
+  #achievement .container .ach .px-lg-6 {
+    padding: 0 10px;
+  }
+
+  #achievement .container .ach .ps-lg-6 {
+    padding-left: 10px;
+  }
+ 
+
+  #achievement button {
+    margin-left: 130px !important;
+    padding: 3px 6px;
+    font-size: 8px;
+  }
+
+  /* #achievement .container .ach .btn-red {
+    margin-top: 20px;
+    margin-left: 525px;
+  }*/
+
+  #solutions {
+    /* background: url("../img/solutions.png") no-repeat center center;
+    height: 40vh;
+    position: relative;
+    color: #ffffff;*/
+    background-image: url("../img/solutions.png");
+    background-size: 750px 350px;
+    background-position: center;
+    height: 50vh !important;
+  }
+
+  #solutions .hero h1 {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    font-size: 24px;
+    text-align: start;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #solutions .hero p {
+    font-size: 12px !important;
+    text-align: start;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 414px) and (min-height: 896px) {
+  #showcase {
+    background-size: 214px 555px !important;
+    height: 60vh !important;
+  }
+
+  #solutions {
+    height: 40vh !important;
+  }
+
+  #achievement .btnn {
+    display: block;
+    margin-left: 150px !important;
+  }
+}
+
 /* Xr Pro */
-@media (min-width: 380px) and (max-width: 540px) {
+@media (min-width: 380px) and (max-width: 600px) {
   .logo {
     padding-left: 29px;
   }
 
   #showcase {
     background: url("../img/Doctor putting on surgical gloves with copy space.png")
-      no-repeat right center/cover;
-    height: 60vh;
-    background-size: 214px 555px;
+      no-repeat right/cover;
+    height: 68vh !important;
+    background-size: 240px 600px !important;
     padding-left: 32px !important;
   }
 
@@ -517,6 +774,7 @@ footer .container .bold {
     font-size: 20px;
     text-align: start;
     width: 80%;
+    margin-top: 250px;
   }
 
   #showcase .show p {
@@ -542,6 +800,7 @@ footer .container .bold {
     height: 100%;
     background: #ffffff;
     opacity: 0.1;
+    display: none;
   }
 
   #showcase .show {
@@ -556,16 +815,11 @@ footer .container .bold {
     /* background: url("../img/solutions.png") no-repeat center center;
     height: 40vh;
     position: relative;
-    color: #ffffff; */
+    color: #ffffff;*/
     background-image: url("../img/solutions.png");
     background-size: 750px 350px;
     background-position: center;
-    height: 35vh;
-  }
-
-  #solutions .hero {
-    padding-left: 32px;
-    padding-right: 32px;
+    height: 40vh !important;
   }
 
   #solutions .hero h1 {
@@ -573,16 +827,22 @@ footer .container .bold {
     padding-top: 1rem;
     font-size: 24px;
     text-align: start;
+    padding-left: 30px;
+    padding-right: 30px !important;
   }
 
   #solutions .hero p {
-    font-size: 10px;
+    font-size: 12px !important;
     text-align: start;
+    padding-left: 30px;
+    padding-right: 30px !important;
+    margin-bottom: 20px;
   }
 
-  #services {
+  /* #services {
     padding: 0;
     margin: 0;
+    display: none;
   }
 
   #services p {
@@ -600,12 +860,10 @@ footer .container .bold {
 
   #services .meal-heading {
     font-size: 12px;
-    
   }
 
   #services .meal-pg {
     font-size: 8px;
-
   }
 
   #services .meal-pic {
@@ -615,9 +873,80 @@ footer .container .bold {
 
   #services {
     display: none;
+  } */
+
+
+  #services {
+    display: block;
   }
 
+  #services h1 {
+    font-size: 30px;
+  }
+
+  #services .p-main {
+    font-size: 15px !important;
+    width: 80%;
+
+  }
+
+  #services .carousel-inner {
+    margin-top: 30px ;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  #services .meal-text {
+    /* padding-left: 50px !important;
+    padding-right: 50px !important; */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  #services .meal-text .meal-heading {
+    display: block;
+    margin-top: 30px !important;
+    text-align: center;
+    text-justify: auto;
+    padding: 0 !important;
+    margin-right: 0 !important;
+  }
   
+  #services .meal-text .meal-pg {
+    font-size: 20px;
+    /* width: 400px; */
+    text-align: center;
+    text-justify: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #services .carousel-inner .row .meal-pic img {
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #services .carousel-control-next {
+    padding-right: 30px;
+    display: none;
+  }
+
+  #services .carousel-control-prev {
+    padding-left: 30px ;
+    display: none;
+  }
+
+  #services .carousel-indicators {
+    left: 620px !important;
+    display: none;
+  }
 
   #about {
     padding: 20px 30px;
@@ -629,13 +958,19 @@ footer .container .bold {
 
   #about .about-p {
     font-size: 12px;
+    margin-bottom: 2px !important;
+  }
+
+  #about .row {
+    padding-bottom: 2px !important;
   }
 
   #achievement {
-    height: 40vh;
+    height: 40vh !important;
     background-image: url("../img/solutions.png");
-    background-size: 600px 400px;
+    background-size: 500px 400px;
     background-position: center;
+    
   }
 
   #achievement .container {
@@ -647,16 +982,22 @@ footer .container .bold {
 
   #achievement .container h1 {
     font-size: 25px;
+    display: block;
   }
 
-  #achievement .container button {
-    margin-left: 143px !important;
-    margin-top: 5px;
-  }
+  
 
   #achievement .container .ach {
-    font-size: 10px;
     margin-bottom: 20px;
+
+  }
+
+  #achievement .container .ach h2 {
+    font-size: 18px;
+  }
+  
+  #achievement .container .ach p {
+    font-size: 12px;
   }
 
   #achievement .container .ach .pe-lg-6 {
@@ -664,7 +1005,7 @@ footer .container .bold {
   }
 
   #achievement .container .ach .px-lg-6 {
-    padding: 0 15px;
+    padding: 0 10px;
   }
 
   #achievement .container .ach .ps-lg-6 {
@@ -672,18 +1013,32 @@ footer .container .bold {
   }
 
   #achievement button {
+    margin-left: 135px !important;
+    padding: 3px 6px;
     font-size: 8px;
+  }
 
+  /* #achievement button {
+    font-size: 8px;
+    margin-left: 140px !important;
+    display: none;
+  }
+
+  #achievement .container button {
+    margin-left: 143px;
+    margin-top: 5px;
+    display: none;
   }
 
   #achievement button img {
     width: 20px;
-  }
+    
+  } */
 
   #people h3 {
     font-size: 20px;
   }
-  
+
   #people .people-pg {
     font-size: 14px;
     padding-left: 32px;
@@ -699,17 +1054,29 @@ footer .container .bold {
     font-size: 7px;
   }
 
+  #people .row h5 {
+    font-size: 12px;
+  }
+
+  #people .row .people-img {
+    width: 30px;
+  }
+
   footer .line {
     margin-left: 32px !important;
     margin-right: 32px !important;
   }
-
 
   footer .footer-group {
     display: flex;
     flex-direction: column;
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  footer .footer-group .list-group-item {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
   }
 
   footer .s-media {
@@ -720,251 +1087,421 @@ footer .container .bold {
   }
 }
 
-@media (min-width: 542px) and (max-width: 600px) {
-
-  #showcase img {
-    display: none;
-  }
-
+@media (min-width: 414px) and (height: 736px) {
   #showcase {
-
-    background: url("../img/Doctor putting on surgical gloves with copy space.png")
-      no-repeat right center/cover;
-    height: 60vh;
-    background-size: 214px 555px;
-    padding-left: 32px !important;
-  }
-
-  #showcase .show h1 {
-    font-size: 20px;
-    text-align: start;
-    width: 60% !important;
-  }
-
-  #showcase .show p {
-    font-size: 8px !important;
-    text-align: start;
-    width: 50%;
-  }
-
-  #showcase .show button {
-    float: left;
-    font-size: 8px;
-  }
-
-  #showcase .show button img {
-    width: 20px;
-  }
-
-  #showcase::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    opacity: 0.1;
-  }
-
-  #showcase .show {
-    margin-top: 10rem;
+    height: 80vh !important;
+    background-size: 214px 600px !important;
   }
 
   #solutions {
-    /* background: url("../img/solutions.png") no-repeat center center;
-    height: 40vh;
-    position: relative;
-    color: #ffffff; */
-    background-image: url("../img/solutions.png");
-    background-size: 550px 350px;
-    background-position: center;
-    height: 35vh;
+    height: 45vh !important;
   }
 
-  #solutions h1 {
-    font-size: 25px !important;
-  }
-
-  #solutions .hero p {
-    font-size: 15px !important;
-    padding-right: 38px !important;
-    
-  }
-
-
-  #achievement {
-    height: 40vh !important;
-    background-image: url("../img/solutions.png") !important;
-    background-size: 600px 400px !important;
-    background-position: center !important;
-  }
-  
-  #achievement .container {
-    z-index: 10;
-    position: absolute;
-    margin-top: 70px;
-    padding-left: 20px;
-  }
-  
-  #achievement .container h1 {
-    font-size: 25px;
-  }
-  
-  #achievement .container button {
-    
-    margin-left: 0 !important;
-    margin-top: 5px;
-    margin-right: 0;
-  }
-  
-  #achievement .container .ach {
-    font-size: 10px;
-    margin-bottom: 20px;
-  }
-  
-  #achievement .container .ach .pe-lg-6 {
-    padding-right: 10px;
-  }
-  
-  #achievement .container .ach .px-lg-6 {
-    padding: 0 15px;
-  }
-  
-  #achievement .container .ach .ps-lg-6 {
-    padding-left: 10px;
-  }
-  
-  #achievement button {
-    font-size: 12px;
-    margin-left: 0 !important;
-  
-  }
-  
-  #achievement button img {
-    width: 20px;
-  }
-
-  #people {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  footer .line {
-    margin-left: 32px !important;
-    margin-right: 32px !important;
-  }
-
-
-  footer .footer-group {
-    display: flex;
-    flex-direction: column;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  footer .s-media {
-    margin-top: 40px;
-    justify-content: space-between !important;
-    padding-left: 32px;
-    padding-right: 32px;
+  #achievement .btnn {
+    display: block;
+    margin-left: 150px !important;
   }
 }
 
-@media (min-width: 541px) and (max-width: 915px) {
-  .logo {
-    padding-left: 20px !important;
+@media (width: 360px) and (height: 740px) {
+  #achievement button {
+    margin-left: 126px !important;
+  }
+}
+
+@media (width: 412px) and (height: 915px) {
+  #achievement button {
+    margin-left: 147px !important;
+  }
+}
+
+@media (width: 412px) and (height: 914px) {
+  #achievement button {
+    margin-left: 147px !important;
+  }
+}
+
+@media (width: 420px) and (height: 845px) {
+  #achievement button {
+    margin-left: 153px !important;
   }
 
   #showcase {
-    padding-left: 32px;
+    background: url("../img/Doctor putting on surgical gloves with copy space.png")
+      no-repeat right/cover;
+    height: 70vh !important;
+    background-size: 250px 580px !important;
+    padding-left: 32px !important;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+  #showcase {
     padding-right: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-  #showcase .show h1 {
-    font-size: 25px;
-    text-align: start;
-    width: 80%;
-    padding-left: 32px;
-  }
-
-  #showcase .show p {
-    font-size: 15px;
-    text-align: start;
-    padding-left: 32px;
-  }
-
-  #showcase .show button {
-    margin-left: 32px;
+    margin-bottom: 90px !important;
   }
 
   #showcase .w-img {
-    width: 300px !important;
-    height: 750px;
+    width: 450px;
+    height: 750;
   }
+  
 
   #solutions {
-    background: url("../img/solutions.png") no-repeat center center;
-    height: 50vh;
-    position: relative;
-    color: #ffffff;
-  }
-
-  #solutions .hero {
-    padding: 32px;
-    margin-left: 32px !important;
-    margin-top: 20px;
-  }
-
-  #services p {
-    font-size: 12px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 30px 48px 30px 48px;
   }
 
   #services {
     display: none;
   }
 
-  #about {
-    padding: 20px 30px;
-  }
-
-  #about .about-heading {
-    font-size: 28px;
-  }
-
-  #about .about-p {
-    font-size: 18px;
-  }
-
-  /* #about .a .b p{
-    padding-bottom: 23px;
+  /* #about {
+    
   } */
 
   #achievement {
     height: 50vh;
-    background-image: url("../img/solutions.png");
-    background-size: 900px 600px;
-    background-position: center;
-    
   }
 
-  #achievement button {
-    font-size: 12px;
+  #achievement .container h1 {
+    margin-top: 10px;
   }
 
-  #achievement button img {
-    width: 40px;
+  #achievement .container .ach .pe-lg-6 {
+    padding-right: 15px !important;
+  }
+
+  #achievement .container .ach .px-lg-6 {
+    padding: 0 20px !important;
+  }
+
+  #achievement .container .ach .ps-lg-6 {
+    padding-left: 15px !important;
+  }
+
+  #achievement .container .ach h2{
+    font-size: 30px;
+  }
+
+  #achievement .container .ach p {
+    font-size: 25px;
   }
 
   #achievement .container button {
-    margin-left: 235px !important;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-left: 220px !important;
+    padding: 14px 18px !important;
+    font-size: 16px !important;
   }
 }
 
+@media (width: 768px) and (height: 1024px) {
+  #showcase {
+    height: 65vh !important;
+    padding-left: 48px !important;
+  }
+
+  #showcase .w-img {
+    width: 400px;
+    height: 750;
+  }
+
+  #solutions {
+    height: 45vh !important;
+    padding: 30px 48px 30px 48px;
+  
+  }
+
+  #solutions .container h1 {
+    margin-top: 70px !important;
+  }
+
+  #solutions .container p {
+    font-size: 25px;
+  }
+
+  #solutions .hero p {
+    font-size: 16px;
+  }
+
+  #services {
+    display: block;
+  }
+
+  #services h1 {
+    font-size: 50px;
+  }
+
+  #services .p-main {
+    font-size: 20px !important;
+    width: 70%;
+
+  }
+
+  #services .carousel-inner {
+    margin-top: 30px ;
+    padding-right: 30px;
+  }
+
+  #services .meal-text {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  #services .meal-text .meal-heading {
+    margin-top: 60px;
+    /* width: 50%; */
+    font-size: 45px;
+    font-weight: 500;
+  }
+  
+  #services .meal-text .meal-pg {
+    font-size: 20px;
+    /* width: 400px; */
+    text-align: left;
+  }
+
+  #services .carousel-inner .row .meal-pic img {
+    width: 300px;
+    height: 400px;
+    /* padding-right: 25px; */
+  }
+
+  #services .carousel-control-next {
+    padding-right: 30px;
+    display: none;
+  }
+
+  #services .carousel-control-prev {
+    padding-left: 30px ;
+    display: none;
+  }
+
+  #services .carousel-indicators {
+    left: 620px !important;
+    display: none;
+  }
+
+  #achievement {
+    height: 70vh;
+    background-size: 900px 700px;
+  }
+
+  #achievement .container h1 {
+    margin-top: 70px;
+  }
+
+  #achievement .container .ach .pe-lg-6 {
+    padding-right: 15px !important;
+  }
+
+  #achievement .container .ach .px-lg-6 {
+    padding: 0 20px !important;
+  }
+
+  #achievement .container .ach .ps-lg-6 {
+    padding-left: 15px !important;
+  }
+
+  #achievement .container .ach h2{
+    font-size: 30px;
+  }
+
+  #achievement .container .ach p {
+    font-size: 25px;
+  }
+
+  #achievement .container button {
+    margin-top: 20px;
+    margin-left: 220px !important;
+    padding: 14px 18px !important;
+    font-size: 16px !important;
+  }
 
 
+}
 
+@media (width: 820px) and (height: 1180px) {
+  #services {
+    display: block;
+  }
+
+  #services h1 {
+    font-size: 50px;
+  }
+
+  #services .p-main {
+    font-size: 20px !important;
+    width: 70%;
+
+  }
+
+  #services .carousel-inner {
+    margin-top: 30px ;
+    padding-right: 30px;
+  }
+
+  #services .meal-text {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  #services .meal-text .meal-heading {
+    margin-top: 60px;
+    /* width: 50%; */
+    font-size: 45px;
+    font-weight: 500;
+  }
+  
+  #services .meal-text .meal-pg {
+    font-size: 20px;
+    /* width: 400px; */
+    text-align: left;
+  }
+
+  #services .carousel-inner .row .meal-pic img {
+    width: 300px;
+    height: 400px;
+    /* padding-right: 25px; */
+  }
+
+  #services .carousel-control-next {
+    padding-right: 30px;
+    display: none;
+  }
+
+  #services .carousel-control-prev {
+    padding-left: 30px ;
+    display: none;
+  }
+
+  #services .carousel-indicators {
+    left: 620px !important;
+    display: none;
+  }
+
+}
+
+@media (width: 1024px) and (height: 600px) {
+  #achievement {
+    height: 80vh !important;
+    margin-bottom: 100px !important;
+  }
+
+  #achievement button {
+    margin-left: 350px !important;
+  }
+}
+
+@media (width: 1280px) and (height: 800px) {
+  #achievement button {
+    margin-left: 430px !important;
+  }
+}
+
+@media (width: 1024px) and (height: 1366px) {
+  nav .container {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+  #showcase {
+    height: 63vh !important;
+  }
+  
+  #showcase .w-img {
+    width: 900px;
+    height: 810px;
+  }
+
+  #solutions .container {
+    padding-right: 48px !important;
+  }
+
+  /* #services {
+    
+  } */
+
+  #services .carousel-inner {
+    margin-top: 40px;
+  }
+
+  #services .meal-text {
+    padding-left: 70px;
+    padding-right: 40px;
+  }
+
+  #services .meal-text .meal-heading {
+    margin-top: 50px;
+    width: 50%;
+    font-size: 60px;
+    font-weight: 500;
+  }
+  
+  #services .meal-text .meal-pg {
+    font-size: 30px;
+    width: 400px;
+    text-align: left;
+  }
+
+  #services .carousel-inner .row .meal-pic img {
+    width: 400px;
+    height: 500px;
+    padding-right: 45px;
+  }
+
+  #services .carousel-control-next {
+    padding-right: 50px;
+  }
+
+  #services .carousel-control-prev {
+    padding-left: 50px;
+  }
+
+  #services .carousel-indicators {
+    left: 920px;
+  }
+
+
+  #achievement {
+    background: url("../img/acheivement.png") no-repeat center center/cover;
+    height: 60vh;
+    position: relative;
+    color: #ffffff;
+    background-size: 1100px 900px;
+    padding-right: 48px;
+  }
+
+  #achievement .container h1 {
+    font-size: 75px !important;
+    margin-top: 150px;
+  }
+
+  #achievement .container .ach .pe-lg-6 {
+    padding-right: 50px !important;
+  }
+
+  #achievement .container .ach .px-lg-6 {
+    padding: 0 30px !important;
+  }
+
+  #achievement .container .ach .ps-lg-6 {
+    padding-left: 50px !important;
+  }
+
+  #achievement .container .ach h2{
+    font-size: 50px;
+  }
+
+  #achievement .container .ach p {
+    font-size: 34px;
+  }
+
+  #achievement .container button {
+    margin-top: 20px;
+    margin-left: 330px !important;
+    padding: 14px 18px !important;
+    font-size: 16px !important;
+  }
+
+}

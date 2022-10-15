@@ -492,13 +492,16 @@ footer .container .bold {
   }
 
   #services .carousel-control-next {
-    padding-right: 30px;
-    display: none;
+    padding-right: 90px;
+    size: 2px;
+    margin-left: 0 !important;
+
   }
 
   #services .carousel-control-prev {
-    padding-left: 30px ;
-    display: none;
+    padding-left: 90px ;
+    size: 2px;
+    margin: 0 !important;
   }
 
   #services .carousel-indicators {
@@ -633,6 +636,19 @@ footer .container .bold {
 
   #showcase .show h1 {
     margin-top: 100px;
+  }
+
+  #services .carousel-control-next {
+    padding-right: 90px;
+    size: 2px;
+    margin-left: 0 !important;
+
+  }
+
+  #services .carousel-control-prev {
+    padding-left: 90px ;
+    size: 2px;
+    margin: 0 !important;
   }
 
   #solutions {
@@ -934,19 +950,24 @@ footer .container .bold {
   }
 
   #services .carousel-control-next {
-    padding-right: 30px;
-    display: none;
+    padding-right: 90px;
+    size: 2px;
+    margin-left: 0 !important;
+
   }
 
   #services .carousel-control-prev {
-    padding-left: 30px ;
-    display: none;
+    padding-left: 90px ;
+    size: 2px;
+    margin: 0 !important;
   }
 
   #services .carousel-indicators {
     left: 620px !important;
     display: none;
   }
+
+  
 
   #about {
     padding: 20px 30px;
